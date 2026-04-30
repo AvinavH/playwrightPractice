@@ -1,0 +1,11 @@
+{
+    "firstname" : "Victor",
+    "lastname" : "Morgan",
+    "totalprice" : 340,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2026-04-02",
+        "checkout" : "2026-06-25"
+    },
+    "additionalneeds" : "Indoor Pool"
+}

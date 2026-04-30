@@ -1,0 +1,4 @@
+﻿email,password,validity
+pavanol@example.com,pavanol,valid
+pavanol12@example.com,pavanol34,invalid
+pavanol52@example.com,pavanol37,invalid

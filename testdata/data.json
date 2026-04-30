@@ -1,0 +1,22 @@
+[
+    {
+        "email" : "pavanol@example.com",
+        "password" : "pavanol",
+        "validity" : "valid"
+    },
+    {
+        "email" : "pavanol1@example.com",
+        "password" : "pavanol123",
+        "validity" : "invalid"
+    },
+    {
+        "email" : "pavanol9@example.com",
+        "password" : "pavanol183",
+        "validity" : "invalid"
+    },
+    {
+        "email" : "",
+        "password" : "",
+        "validity" : "invalid"
+    }
+]

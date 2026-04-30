@@ -1,0 +1,11 @@
+{
+    "firstname" : "Elena",
+    "lastname" : "Greyson",
+    "totalprice" : 550,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2026-03-02",
+        "checkout" : "2026-07-25"
+    },
+    "additionalneeds" : "Gym"
+}
