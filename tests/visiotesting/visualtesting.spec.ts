@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
 
+// It will fail first time as there is no baseline sreenshot, then it'll match with the subsequent runs
 test('Visual Validation', async ({page}) => {
     await page.goto("https://demowebshop.tricentis.com/");
 

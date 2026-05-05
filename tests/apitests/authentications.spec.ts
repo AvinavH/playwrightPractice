@@ -45,3 +45,15 @@ test('Accessing API with Token-Based Authentication', async ({request}) => {
     console.log(authData);
 
 });
+
+// 4. OAuth and 5. API Key Authentication would require specific setup and are not included in this example.
+test('Accessing API with API Key Authentication', async ({request}) => {
+    const response = await request.get('https://api.example.com/data', {
+        params: {
+            'x-api-key': 'your_api_key_here'
+        }
+    }); 
+    expect(response.ok()).toBeTruthy();
+    const responseData = await response.json();
+    console.log(responseData);
+});
