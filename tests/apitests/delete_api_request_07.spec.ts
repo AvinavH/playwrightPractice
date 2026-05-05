@@ -2,7 +2,7 @@ import {test, expect} from '@playwright/test';
 import * as fs from 'fs';
 import { request } from 'http';
 
-// utility function to read JSON file
+// utility function to read JSON file from the specified path and return the parsed JSON data
 function readJSON(filePath: string) {
     const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     return jsonData;
