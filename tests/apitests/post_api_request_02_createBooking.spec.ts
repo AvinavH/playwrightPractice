@@ -5,7 +5,7 @@
 import {test, expect} from '@playwright/test';
 import * as fs from 'fs';
 
-test('Create POST Request using JSON file', async ({request}) => {
+test('Create POST Request using JSON file', { tag: '@api' }, async ({request}) => {
 
     // request body
     const requestBody = JSON.parse(fs.readFileSync('testdata/post_request_body.json', 'utf8'));

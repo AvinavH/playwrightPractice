@@ -8,7 +8,7 @@ function readJSON(filePath: string) {
     return jsonData;
 }
 
-test('Update a booking using PUT API Request', async ({request}) => {
+test('Update a booking using PUT API Request', { tag: '@api' }, async ({request}) => {
     
     // 1. Create a new booking to get the booking ID using POST request
     const createResponse = await request.post('/booking', {

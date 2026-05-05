@@ -11,7 +11,7 @@ import {test, expect} from '@playwright/test';
 import { faker } from '@faker-js/faker';
 import { DateTime } from 'luxon';
 
-test('Create POST Request using JSON file', async ({request}) => {
+test('Create POST Request using JSON file',{ tag: '@api' }, async ({request}) => {
 
     // data generation using faker
     const firstName = faker.person.firstName();

@@ -4,7 +4,7 @@
 
 import {test, expect} from '@playwright/test';
 
-test('Create POST Request using static body', async ({request}) => {
+test('Create POST Request using static body', { tag: '@api' }, async ({request}) => {
 
     // request body
     const requestBody = {

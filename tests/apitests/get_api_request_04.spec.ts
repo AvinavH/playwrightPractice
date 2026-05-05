@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';  
 import { request } from 'node:http';
 
-test('Get Booking Details by ID - Path parameter', async ({request}) => {
+test('Get Booking Details by ID - Path parameter',{ tag: '@api' }, async ({request}) => {
 
     const bookingId = 4467; // specify the booking ID you want to retrieve
 
@@ -15,7 +15,7 @@ test('Get Booking Details by ID - Path parameter', async ({request}) => {
     expect(response.status()).toBe(200);
 });
 
-test.only('Get Booking Details by Name - Query parameter', async ({request}) => {
+test.only('Get Booking Details by Name - Query parameter', { tag: '@api' }, async ({request}) => {
 
     const firstName = 'John'; // specify the first name to search for
     const lastName = 'Smith'; // specify the last name to search for

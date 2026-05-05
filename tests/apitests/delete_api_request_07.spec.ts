@@ -8,7 +8,7 @@ function readJSON(filePath: string) {
     return jsonData;
 }
 
-test('DELETE a booking using DELETE API Request', async ({request}) => {
+test('DELETE a booking using DELETE API Request', { tag: '@api' },  async ({request}) => {
     
     // 1. Create a new booking to get the booking ID using POST request
     const createResponse = await request.post('/booking', {
