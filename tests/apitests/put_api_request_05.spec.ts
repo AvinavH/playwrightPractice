@@ -1,6 +1,5 @@
-import {test, expect} from '@playwright/test';
+import {test, expect, request} from '@playwright/test';
 import * as fs from 'fs';
-import { request } from 'http';
 
 // utility function to read JSON file
 function readJSON(filePath: string) {

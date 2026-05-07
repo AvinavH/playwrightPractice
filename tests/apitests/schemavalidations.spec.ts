@@ -3,10 +3,9 @@
 npm install --save-dev playwright ajv
 
 */
-import {test, expect} from '@playwright/test';
+import {test, expect, request} from '@playwright/test';
 import Ajv from 'ajv';
 import * as fs from 'fs';
-import { request } from 'http';
 
 test('JSON Schema Validation : Check 01', async ({request}) => {
 

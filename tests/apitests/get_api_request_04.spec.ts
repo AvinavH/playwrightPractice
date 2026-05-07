@@ -1,5 +1,4 @@
-import {test, expect} from '@playwright/test';  
-import { request } from 'node:http';
+import {test, expect, request} from '@playwright/test';
 
 test('Get Booking Details by ID - Path parameter',{ tag: '@api' }, async ({request}) => {
 
